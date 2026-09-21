@@ -3,6 +3,15 @@
   const ScrollTrigger = window.ScrollTrigger;
   const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
 
+  // The exported Webflow markup gives homepage thumbnails no intrinsic
+  // dimensions. Native lazy loading can therefore collapse below-the-fold
+  // images to zero height and never request them. Start those lightweight
+  // responsive thumbnails immediately so every project card is populated.
+  document.querySelectorAll("img.thumbnail").forEach((thumbnail) => {
+    thumbnail.loading = "eager";
+    thumbnail.fetchPriority = "low";
+  });
+
   if (!gsap || reduceMotion) {
     return;
   }
