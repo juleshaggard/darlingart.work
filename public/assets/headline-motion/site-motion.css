@@ -28,6 +28,19 @@
   transform-origin: 50% 50%;
 }
 
+.darling-wordmark {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Jager, sans-serif;
+  font-size: 15.5vw;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 0.82;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hm-motion-soft,
   .hm-motion-media,

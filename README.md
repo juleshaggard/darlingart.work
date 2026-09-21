@@ -1,8 +1,8 @@
-# Jules Haggard Art Work
+# Jules Darling Art Work
 
-Astro-powered static mirror of the Jules Haggard art portfolio.
+Astro-powered static mirror of the Jules Darling art portfolio.
 
-Generated from the public Webflow site and deployed to GitHub Pages at https://haggardart.work/.
+Generated from the public Webflow site and deployed to GitHub Pages at https://darlingart.work/.
 
 ## Commands
 

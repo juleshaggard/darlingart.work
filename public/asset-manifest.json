@@ -1,18 +1,18 @@
 {
-  "asset_count": 537,
-  "generated_for": "juleshaggard/haggardart.work",
+  "asset_count": 536,
+  "generated_for": "darlingart.work",
   "pages": [
     "index.html",
-    "ritual-goods-jules-haggard-art/index.html",
-    "leather-jules-haggard-art-work/index.html",
-    "goods-jules-haggard-art-work/index.html",
-    "jules-haggard-art-work-woodland-deities/index.html",
-    "arnold-jules-haggard-art-work/index.html",
-    "corridor-4-jules-haggard-art-work/index.html",
-    "dont-do-it-jules-haggard-art-work/index.html",
-    "collapse-jules-haggard-art-work/index.html",
-    "drawn-jules-haggard-art-work/index.html",
-    "digital-realm-jules-haggard-art-work/index.html",
-    "inside-jules-haggard-art-work/index.html"
+    "ritual-goods/index.html",
+    "leather/index.html",
+    "instruments/index.html",
+    "woodland-deities/index.html",
+    "arnold/index.html",
+    "corridor-4/index.html",
+    "dont-do-it/index.html",
+    "collapse/index.html",
+    "drawn/index.html",
+    "digital-realm/index.html",
+    "inside/index.html"
   ]
 }

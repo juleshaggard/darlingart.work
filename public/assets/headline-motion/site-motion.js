@@ -194,7 +194,8 @@
 
   const animateProjectPages = () => {
     reveal(".aboutproject .projectparagraph", { blur: 13, duration: 0.95, y: 28, start: "top 88%" });
-    reveal(".about, .project-footer .hero-footername", { blur: 14, duration: 1, y: 34, start: "top 88%" });
+    reveal(".about", { blur: 14, duration: 1, y: 34, start: "top 88%" });
+    reveal(".project-footer .hero-footername", { blur: 14, duration: 1, y: 34, start: "top 98%" });
   };
 
   const bindHover = () => {

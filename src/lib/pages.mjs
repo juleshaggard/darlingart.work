@@ -6,7 +6,18 @@ const pageDir = pathToFileURL(resolve("src/content/pages") + "/");
 
 export function getPageHtml(slug) {
   const html = readFileSync(new URL(`${slug}.html`, pageDir), "utf8");
-  return injectHeadlineMotion(html, slug);
+  return injectSiteMetadata(injectHeadlineMotion(html, slug), slug);
+}
+
+function injectSiteMetadata(html, slug) {
+  const pathname = slug === "index" ? "/" : `/${slug}/`;
+  const canonicalUrl = new URL(pathname, "https://darlingart.work").href;
+  const metadata = [
+    `<link rel="canonical" href="${canonicalUrl}"/>`,
+    `<meta property="og:url" content="${canonicalUrl}"/>`,
+  ].join("");
+
+  return html.replace("</head>", `${metadata}</head>`);
 }
 
 function injectHeadlineMotion(html, slug) {
