@@ -12,12 +12,15 @@ export function getPageHtml(slug) {
 function injectSiteMetadata(html, slug) {
   const pathname = slug === "index" ? "/" : `/${slug}/`;
   const canonicalUrl = new URL(pathname, "https://darlingart.work").href;
+  const versionedAssets = html
+    .replaceAll("66463836617e88260b4ffa65_fav.png", "66463836617e88260b4ffa65_fav.png?v=darling")
+    .replaceAll("66463839c40ed9904d65205b_app.png", "66463839c40ed9904d65205b_app.png?v=darling");
   const metadata = [
     `<link rel="canonical" href="${canonicalUrl}"/>`,
     `<meta property="og:url" content="${canonicalUrl}"/>`,
   ].join("");
 
-  return html.replace("</head>", `${metadata}</head>`);
+  return versionedAssets.replace("</head>", `${metadata}</head>`);
 }
 
 function injectHeadlineMotion(html, slug) {
